@@ -2,48 +2,38 @@
 <html>
   <head>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <script src="js/jquery-3.1.1.js"></script>
-    <script src="js/scripts.js"></script>
-    <title>Appointment</title>
+      <link href="css/styles.css" rel="stylesheet" type="text/css">
+      <script src="js/jquery-3.1.1.js"></script>
+      <script src="js/scripts.js"></script>
+    <title>Address-Book</title>
   </head>
   <body>
     <div class="container">
-      <h1>Book Your Appointment</h1>
-      <form id="appointment">
-        <div class="form-group">
-          <label for="firstName">Your First Name</label>
-          <input id="firstName" class="form-control" type="text">
-        </div>
-        <div class="form-group">
-          <label for="lastName">Your Last Name</label>
-          <input id="lastName" class="form-control" type="text">
-        </div>
-        <div class="form-group">
-          <label for="whyHere">Reason For Visit</label>
-          <input id="whyHere" class="form-control" type="text">
-        </div>
-        <div class="form-group">
-          <label for="appointmentDate">When Do You Want To Visit?</label>
-          <input id="appointmentDate" class="form-control" type="text">
-        </div>
-        <div class="form-group">
-          <label for="startTime">What time do you want to visit?</label>
-          <input id="startTime" class="form-control" type="text">
-        </div>
-        <div class="form-group">
-          <label for="endTime">What time do you want your appointment to end?</label>
-          <input id="endTime" class="form-control" type="text">
-        </div>
-        <button type="submit" class="btn">Book it!</button>
-      </form>
+      <div class="row">
+        <h1> You have lots of friends! </h1>
+        <div class="col-md-5" id="friendList">
 
-      <div class="output">
-        <h2> Booking Accepted!</h2>
-        <p id="outputText">
-          
-        </p>
+        </div>
+        <div class="col-md-1">
+
+        </div>
+        <div class="col-md-6">
+          <h1> Who is your friend? </h1>
+          <form id="friends">
+            <div>
+              <label for="name">Your Full Name</label>
+              <input id="name"  type="text">
+            </div>
+            <div>
+              <label for="secretName">Your Secret Name (ss#)</label>
+              <input id="secretName"  type="text">
+            </div>
+            <button> Show Me My Letter</button>
+          </form>
+        </div>
       </div>
+
     </div>
+
   </body>
 </html>
