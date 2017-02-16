@@ -10,11 +10,20 @@ body {
   height: 100%;
 }
 
-.test {
-  color: red;
+.showHide {
   display: none;
 }
 
-#clickable {
-  color: blue;
+.clickable{
+  font-size: 50px;
+  cursor:help;
+  color: #0088cc;
+  /*cursor: sw-resize;*/
+}
+.clickable:hover{
+  text-decoration: underline;
+}
+
+#x {
+  background-color: yellow;
 }
